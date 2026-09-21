@@ -644,6 +644,38 @@ def build_index():
   </section>
 """
 
+    materials = """  <section class="section materials">
+    <div class="wrap">
+      <p class="eyebrow">Workshop materials</p>
+      <div class="materials__grid">
+        <figure class="materials__logo">
+          <a href="assets/img/workshop-logo.png" download>
+            <img src="assets/img/workshop-logo.webp" width="800" height="800"
+                 decoding="async"
+                 alt="Workshop logo: a connected brain above mountains and a river through the Sonoran Desert.">
+          </a>
+          <figcaption><a href="assets/img/workshop-logo.png" download>Download symposium logo</a></figcaption>
+        </figure>
+        <article class="materials__flyer">
+          <a class="materials__flyer-image" href="assets/img/workshop-flyer.png"
+             aria-label="Open the official workshop flyer at full size">
+            <img src="assets/img/workshop-flyer-preview.webp" width="640" height="960"
+                 decoding="async" alt="Official workshop flyer.">
+          </a>
+          <div class="materials__flyer-copy">
+            <h2>Official workshop flyer</h2>
+            <p class="note">PNG &middot; 1024 &times; 1536</p>
+            <div class="btn-row">
+              <a class="btn" href="assets/img/workshop-flyer.png" download>Download flyer</a>
+              <a class="btn btn--light" href="assets/img/workshop-flyer.png">View full size</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+"""
+
     cta = """  <section class="cta">
     <div class="wrap wrap--narrow">
       <p class="eyebrow">Taking part</p>
@@ -665,7 +697,7 @@ def build_index():
     return page("index.html", "", 
                 "A two-day scientific workshop at Biosphere 2, May 2027, on reasoning as the basis "
                 "for geo-scientific modeling in the age of AI, honoring Professor Hoshin V. Gupta.",
-                h + strip + motivation + sessions + honor + dates + cta, preload)
+                h + strip + motivation + sessions + honor + dates + materials + cta, preload)
 
 
 def build_theme():

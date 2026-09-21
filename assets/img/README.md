@@ -13,6 +13,10 @@ lossy and not worth re-editing.
 | `hoshin.jpg` | Home, Theme, Organizers | Hoshin's portrait (the 2026 outdoor one), resized to 900×1009 |
 | `has-lockup.png` | Footer band, every page | Official HAS / College of Science lockup |
 | `b2-logo.png` | Footer band, every page | Official Biosphere 2 / University of Arizona wordmark lockup, supplied as JPEG; white background knocked out to transparent |
+| `workshop-logo.webp` | Home | Official symposium logo, optimized for display |
+| `workshop-logo.png` | Home download | Official symposium logo, 800&times;800 PNG |
+| `workshop-flyer-preview.webp` | Home | Lightweight flyer preview |
+| `workshop-flyer.png` | Home download | Official workshop flyer supplied by Maria Castro, 1024&times;1536 PNG |
 
 ## Replacing one
 

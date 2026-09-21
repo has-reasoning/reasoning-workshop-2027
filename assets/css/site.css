@@ -423,6 +423,47 @@ a:hover { color: var(--mesa-deep); }
 .dates li[data-now] time { color: var(--mesa-deep); }
 @media (max-width: 640px) { .dates li { grid-template-columns: 1fr; gap: .3rem; } }
 
+/* ---------- Official workshop materials ---------- */
+.materials { background: var(--glass-deep); }
+.materials__grid {
+  display: grid;
+  grid-template-columns: minmax(210px, .75fr) minmax(430px, 1.6fr);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: center;
+}
+.materials__logo { text-align: center; }
+.materials__logo img {
+  width: min(100%, 330px);
+  margin-inline: auto;
+  filter: drop-shadow(0 18px 30px rgba(0, 28, 72, .18));
+}
+.materials__logo figcaption { margin-top: 1rem; }
+.materials__flyer {
+  display: grid;
+  grid-template-columns: minmax(180px, 250px) minmax(0, 1fr);
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: center;
+}
+.materials__flyer-image {
+  display: block;
+  border: 1px solid var(--glass-edge);
+  background: var(--midnight);
+  box-shadow: 0 18px 42px rgba(0, 28, 72, .18);
+}
+.materials__flyer-image img { width: 100%; height: auto; }
+.materials__flyer-copy h2 { color: var(--midnight); }
+
+@media (max-width: 880px) {
+  .materials__grid { grid-template-columns: 1fr; }
+  .materials__logo { text-align: left; }
+  .materials__logo img { width: min(62vw, 260px); margin-inline: 0; }
+}
+
+@media (max-width: 560px) {
+  .materials__flyer { grid-template-columns: 1fr; }
+  .materials__flyer-image { max-width: 260px; }
+}
+
 /* ============================================================
    PROGRAM — the signature element.
    Every block's bar is scaled to its true duration in minutes;

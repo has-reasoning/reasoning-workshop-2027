@@ -68,9 +68,10 @@ to run the build will silently undo your work.
 ### Changing the speaker list
 
 Edit the `SESSIONS` list in `tools/build.py` and rebuild. Each entry is
-`(name, affiliation, role, topic, status)`. The `status` field no longer
-changes what is rendered — everyone listed appears as a speaker — but it is
-kept so the committee can track who has actually replied.
+`(name, affiliation, role, topic, status)`. Invited speakers remain `TBD` for
+both name and affiliation until they accept. The private invitee spreadsheet
+outside this repository is the source of names; do not copy pending names into
+this public repository.
 
 Named alternates and the "other possibilities" brainstorm list are deliberately
 not on the site. Being publicly listed as somebody's fallback is worse than not
@@ -110,6 +111,5 @@ that way.
 
 ## Known gaps
 
-- Registration dates and fee are unset, pending funding decisions
+- Registration date and fee are not yet announced
 - Abstract submission system not yet chosen, so nothing is linked
-- Workshop logo and flyer (Hossein and Maria) not yet incorporated
