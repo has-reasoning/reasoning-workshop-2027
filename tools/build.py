@@ -70,7 +70,7 @@ def head(page_title, description, page_css=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">{extra}
+<link rel="stylesheet" href="assets/css/site.css?v=20260921b">{extra}
 <script>document.documentElement.className += " js";</script>
 </head>
 <body>
@@ -191,7 +191,7 @@ def page_hero(eyebrow, title, sub):
     return """  <section class="hero hero--plain">
     <div class="hero__frame" aria-hidden="true"></div>
     {truss}
-    <img class="hero__mark" src="assets/img/workshop-logo.webp" width="800" height="800"
+    <img class="hero__mark" src="assets/img/workshop-logo.webp" width="410" height="410"
          decoding="async" alt="" aria-hidden="true">
     <div class="wrap hero__inner" style="padding-block:clamp(3rem,7vw,4.5rem) clamp(2.25rem,5vw,3rem)">
       {brow}<h1 style="font-size:clamp(2rem,4.2vw,3.2rem);max-width:20ch">{title}</h1>
