@@ -191,6 +191,8 @@ def page_hero(eyebrow, title, sub):
     return """  <section class="hero hero--plain">
     <div class="hero__frame" aria-hidden="true"></div>
     {truss}
+    <img class="hero__mark" src="assets/img/workshop-logo.webp" width="800" height="800"
+         decoding="async" alt="" aria-hidden="true">
     <div class="wrap hero__inner" style="padding-block:clamp(3rem,7vw,4.5rem) clamp(2.25rem,5vw,3rem)">
       {brow}<h1 style="font-size:clamp(2rem,4.2vw,3.2rem);max-width:20ch">{title}</h1>
       <p class="hero__sub" style="font-size:clamp(1rem,1.7vw,1.2rem)">{sub}</p>
