@@ -1,7 +1,7 @@
 # Deploying
 
 The site is public, published from this repository by GitHub Pages at
-**<https://nkalauni.github.io/reasoning-workshop-2027/>**.
+**<https://has-reasoning.github.io/reasoning-workshop-2027/>**.
 
 There is no build server and no Actions workflow. GitHub serves the `.html`
 files in the repository root exactly as they are, so:
@@ -36,45 +36,30 @@ If the department gets a domain or an `arizona.edu` subdomain from UITS:
 
 1. Add a file named `CNAME` in the repository root containing only the
    hostname, e.g. `b2workshop.arizona.edu`.
-2. Point DNS at GitHub — a `CNAME` record to `nkalauni.github.io` for a
+2. Point DNS at GitHub — a `CNAME` record to `has-reasoning.github.io` for a
    subdomain, or GitHub's four `A` records for an apex domain.
 3. **Settings → Pages → Custom domain**, enter it, and tick **Enforce HTTPS**
    once the certificate is issued.
 
-Doing this also makes the site independent of whose personal account hosts it,
-which is worth having before the URL goes out on a flyer.
+Doing this would provide a shorter public address if the department wants one.
 
-## Moving the repository to the symposium's own account
+## Repository ownership and the original URL
 
-The site currently lives under a personal account (`nkalauni`). The plan is to
-move it to a GitHub account registered with the symposium's shared Gmail, so
-that hosting does not depend on one student's account.
+The site is owned by the `has-reasoning` GitHub organization. The canonical
+repository is <https://github.com/has-reasoning/reasoning-workshop-2027>.
 
-To move it, once the symposium account exists:
+The official flyer was created while the site still used Nabin's personal
+GitHub Pages address, so its QR code points to:
 
-1. From the new account, accept the transfer. From this one:
-   **Settings → General → Transfer ownership**, enter the new account name.
-2. Everything transfers — commits, history, Pages settings.
-3. **Settings → Pages** on the new account, confirm the source is
-   `main` / `(root)`.
+<https://nkalauni.github.io/reasoning-workshop-2027/>
 
-Two things to know before doing it:
+That address is intentionally kept alive by a separate, minimal redirect
+repository under `nkalauni`. Do not delete or repurpose it while printed flyers
+or other old links may still be in circulation. It forwards every path to the
+canonical organization-hosted site.
 
-- **The Pages URL changes** to
-  `https://<newaccount>.github.io/reasoning-workshop-2027/`. GitHub redirects
-  the old *repository* URL but **not** the old Pages URL, so any link already
-  circulated stops working. Do it before the URL goes on a flyer, or set up a
-  custom domain first so the public address never changes again.
-- **Prefer a GitHub organization over a plain account** if it is no more
-  trouble. An organization can have several owners, so Nabin, Mohammad and a
-  faculty member all keep access without sharing one password — which matters
-  for a site that has to outlive the current students. An account tied to a
-  shared Gmail works, but it is one credential everybody has to share, and
-  whoever holds it is a single point of failure. Either way the transfer steps
-  above are the same.
-
-A custom domain makes this moot for visitors: point it at whichever account
-hosts the repository and the public URL never changes again.
+If a custom domain is added later, update both the canonical site and this
+redirect.
 
 ## Taking the site private again
 
@@ -92,5 +77,3 @@ Access does it on the free tier, with email one-time PINs.
       contact address on every page
 - [ ] Registration page still says "date to be announced"
 - [ ] Abstract submission system not chosen, so nothing is linked
-- [ ] Workshop logo and flyer, once they exist
-- [ ] Move hosting to the symposium's own GitHub account (see below)
